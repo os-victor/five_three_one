@@ -107,8 +107,8 @@
             const rm_90 = exercise_pr * 0.9;
             document.getElementById('table_result').style.display = '';
             document.getElementById('tbl_exercise_name').innerHTML = exercise_name;
-            document.getElementById('rm_90').innerHTML = toKg(exercise_pr);
-            document.getElementById('rm_100').innerHTML = toKg(rm_90);
+            document.getElementById('rm_90').innerHTML = `1RM: ${toKg(exercise_pr)}`;
+            document.getElementById('rm_100').innerHTML = `90% x 1RM: ${toKg(rm_90)}`;
 
             const weeks = [
                 [65, 70, 75, 40],
